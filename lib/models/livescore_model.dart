@@ -27,7 +27,7 @@ class MatchInfo {
 class LiveScoreModelApi {
   Future getLiveScore() async {
     var url =
-        'https://api.cricapi.com/v1/currentMatches?apikey=1cf2af3e-126b-4825-ae0f-b8c744c6fa70&offset=0';
+        'https://api.cricapi.com/v1/currentMatches?apikey= enter your API key here';
     var responce = await http.get(Uri.parse(url));
     var json = jsonDecode(responce.body);
     var jsonMatchData = json['data'];
