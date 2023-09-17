@@ -20,7 +20,7 @@ class UpdatesInfo {
 class UpdatesModelApi {
   Future getUpdates() async {
     var url =
-        'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=4772cb16f4b34f5fa2039b61f30774f6';
+        'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey= enter your API key here';
     var responce = await http.get(Uri.parse(url));
     var json = jsonDecode(responce.body);
     var jsonUpdatesData = json['articles'];
