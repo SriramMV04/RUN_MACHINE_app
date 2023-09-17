@@ -20,7 +20,7 @@ class FixturesInfo {
 class FixturesModelApi {
   Future getFixtures() async {
     var url =
-        'https://api.cricapi.com/v1/matches?apikey=1cf2af3e-126b-4825-ae0f-b8c744c6fa70&offset=0';
+        'https://api.cricapi.com/v1/matches?apikey= enter your API key here';
     var responce = await http.get(Uri.parse(url));
     var json = jsonDecode(responce.body);
     var jsonFixturesData = json['data'];
